@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "amd",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "removeComments": false,
+    "noImplicitAny": false
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "compileOnSave": true
+}
