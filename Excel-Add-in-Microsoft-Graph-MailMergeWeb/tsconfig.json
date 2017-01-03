@@ -5,10 +5,12 @@
     "moduleResolution": "node",
     "sourceMap": true,
     "removeComments": false,
-    "noImplicitAny": false
-  },
-  "exclude": [
-    "node_modules"
-  ],
-  "compileOnSave": true
+    "noImplicitAny": false,
+    "outDir": "dist",
+    "rootDir": "src",
+    "lib": [
+      "dom",
+      "es2015"
+    ]
+  }
 }

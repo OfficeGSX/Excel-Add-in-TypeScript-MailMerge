@@ -1,0 +1,87 @@
+﻿/*Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See full license in root of repo. */
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.ms-landing-page {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.ms-landing-page__main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex: 1 1 0;
+    height: 100%;
+}
+
+
+.ms-landing-page__content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex: 1 1 0;
+    min-height: 180px;
+    padding: 20px;
+}
+
+    .ms-landing-page__content h2 {
+        margin-bottom: 20px;
+    }
+
+
+.ms-Button .ms-Button--compound {
+    height: auto;
+    min-height: 72px;
+    max-width: 280px;
+    padding: 20px;
+    align-items: center;
+}
+
+    .ms-Button.ms-Button--compound .ms-Button-label {
+        display: block;
+        font-family: 'Segoe UI Semibold WestEuropean', 'Segoe UI Semibold', 'Segoe UI', Tahoma, Arial, sans-serif;
+        position: relative;
+        text-align: center;
+        padding-top: 5px;
+    }
+
+    .ms-Button .ms-Button--compound:focus .ms-Button-label {
+        color: #333333;
+    }
+
+    .ms-Button .ms-Button--compound:focus .ms-Button-description {
+        color: #666666;
+    }
+
+
+.ms-Icon--check {
+    font-size: 80px;
+}
+
+.checkmark {
+    text-align: center;
+    padding-top: 70px;
+}
+
+.success {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.success-text {
+    margin: 0;
+}
+
+#restart {
+    width: 80%;
+    min-height: 30px;
+    padding: 10px;
+}

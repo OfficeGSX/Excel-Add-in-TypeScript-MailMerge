@@ -1,0 +1,216 @@
+﻿/*Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See full license in root of repo. */
+
+#mainpage {
+    display: block;
+    overflow: hidden;
+}
+
+#spinner {
+    display: none;
+    overflow: hidden;
+}
+
+.ms-landing-page {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.ms-landing-page__content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex: 1 1 0;
+    min-height: 180px;
+    padding: 20px;
+}
+
+
+.ms-Button .ms-Button--compound {
+    height: auto;
+    min-height: 72px;
+    max-width: 280px;
+    padding: 20px;
+}
+
+#previewEmail {
+    position: relative;
+    left: -1px;
+}
+
+#sendEmail {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.ms-Button .ms-Button--compound .ms-Button-label {
+    display: block;
+    font-family: 'Segoe UI Semibold WestEuropean', 'Segoe UI Semibold', 'Segoe UI', Tahoma, Arial, sans-serif;
+    position: relative;
+    text-align: left;
+    margin-top: -5px;
+}
+
+.ms-Button .ms-Button--compound .ms-Button-description {
+    color: #666666;
+    display: block;
+    font-family: 'Segoe UI Regular WestEuropean', 'Segoe UI', Tahoma, Arial, sans-serif;
+    font-size: 12px;
+    position: relative;
+    text-align: left;
+    top: 3px;
+}
+
+.ms-Button .ms-Button--compound:hover .ms-Button-description {
+    color: #212121;
+}
+
+.ms-Button .ms-Button--compound:focus {
+    border-color: #0078d7;
+    background-color: #f4f4f4;
+}
+
+    .ms-Button .ms-Button--compound:focus .ms-Button-label {
+        color: #333333;
+    }
+
+    .ms-Button .ms-Button--compound:focus .ms-Button-description {
+        color: #666666;
+    }
+
+.ms-Button .ms-Button--compound:active {
+    background-color: #0078d7;
+}
+
+    .ms-Button .ms-Button--compound:active .ms-Button-description,
+    .ms-Button.ms-Button--compound:active .ms-Button-label {
+        color: #ffffff;
+    }
+
+.ms-Button .ms-Button--compound:disabled .ms-Button-label,
+.ms-Button.ms-Button--compound:disabled .ms-Button-description,
+.ms-Button.ms-Button--compound.is-disabled .ms-Button-label,
+.ms-Button.ms-Button--compound.is-disabled .ms-Button-description {
+    color: #a6a6a6;
+}
+
+.ms-Button .ms-Button--compound:disabled:focus,
+.ms-Button .ms-Button--compound:disabled:active,
+.ms-Button .ms-Button--compound.is-disabled:focus,
+.ms-Button .ms-Button--compound.is-disabled:active {
+    border-color: #f4f4f4;
+    background-color: #f4f4f4;
+}
+
+    .ms-Button .ms-Button--compound:disabled:focus .ms-Button-label,
+    .ms-Button .ms-Button--compound:disabled:focus .ms-Button-description,
+    .ms-Button .ms-Button--compound:disabled:active .ms-Button-label,
+    .ms-Button .ms-Button--compound:disabled:active .ms-Button-description,
+    .ms-Button .ms-Button--compound.is-disabled:focus .ms-Button-label,
+    .ms-Button .ms-Button--compound.is-disabled:focus .ms-Button-description,
+    .ms-Button .ms-Button--compound.is-disabled:active .ms-Button-label,
+    .ms-Button .ms-Button--compound.is-disabled:active .ms-Button-description {
+        color: #a6a6a6;
+    }
+
+.instruction {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.ms-ContextualMenu {
+    display: none;
+}
+
+.is-open {
+    display: block !important;
+}
+
+.ms-ContextualMenu.is-open {
+    position: fixed;
+    bottom: 90px;
+    right: 0px;
+}
+
+#myDropdown {
+    position: fixed;
+    bottom: 90px;
+    right: 0px;
+}
+
+.ms-notification-progress-indeterminate {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    height: 100%;
+}
+
+.ms-notification-progress-indeterminate__main {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    height: 100%;
+    -webkit-flex: 1 1 0px;
+    flex: 1 1 0px;
+    padding: 20px;
+}
+
+.ms-notification-progress-indeterminate__title {
+    padding: 0 20px;
+}
+
+.ms-notification-progress-indeterminate__logo {
+    height: 80px;
+    margin-bottom: 7px;
+    padding-bottom: 30px;
+}
+
+.ms-firstrun-value__title {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.ms-progress {
+    padding: 20px;
+    margin-bottom: 80px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+    .ms-progress .ms-ProgressIndicator-itemDescription,
+    .ms-progress .ms-ProgressIndicator-itemName {
+        color: #333333;
+        text-align: center;
+    }
+
+    .ms-progress .ms-Spinner {
+        position: relative;
+        bottom: 40px;
+        /* height of the spinner from fabric.spinner.js  */
+        left: 40%;
+        height: 40px;
+        /* standard padding; */
+    }
+
+    .ms-progress .ms-Spinner-circle {
+        background-color: #333333;
+    }

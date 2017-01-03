@@ -1,6 +1,6 @@
 # Excel Add-in TypeScript MailMerge
 
-The Excel Mail Merge Add-in for TypeScript connects to Microsoft Graph, gets email templates from a template folder in Outlook, and sends mail from a list of recipients in an Excel table. 
+The Excel Mail Merge Add-in for TypeScript connects to Microsoft Graph, gets email templates from a template folder in Outlook, and sends mail from a list of recipients in an Excel table.
 
 ![Start page](readme-images/first_run.PNG)
 
@@ -9,8 +9,8 @@ The Excel Mail Merge Add-in for TypeScript connects to Microsoft Graph, gets ema
 To run the sample, you will need:
 
 * Visual Studio 2015
-* TypeScript for Microsoft Visual Studio min version 2.0.6.0 
-* [Node.js](https://nodejs.org/) 
+* TypeScript for Microsoft Visual Studio min version 2.0.6.0
+* [Node.js](https://nodejs.org/)
 * An Office 365 developer account. If you don't have one, [join the Office 365 Developer Program and get a free 1 year subscription to Office 365](https://aka.ms/devprogramsignup).
 
 ## Run the add-in
@@ -43,27 +43,28 @@ Save the application and make note of the *client ID*.
 
 ### Update the client id
 
-* In your Visual Studio project, open Excel-Add-in-Microsoft-Graph-MailMergeWeb/app/app.ts.
-* Update `clientId: '[Enter your clientId here]'` with the value from your Azure AD application.
+* In your Visual Studio project, open Excel-Add-in-Microsoft-Graph-MailMergeWeb/src/home/home.ts.
+* Update '[Enter your clientId here]'` with the value from your Azure AD application.
+* Update the '[redirect Url]' with your redirect Url.
 
-### Run the add-in 
-  
+### Run the add-in
+
 1. Open a command prompt to \<sample directory\>\Excel-Add-in-Microsoft-Graph-MailMergeWeb and run `npm install` and when that is finished, run `npm start`.
-2. In Visual Studio, press F5 to run the sample. 
-3. When Excel opens, select the **Mail Merge** command button from the Home tab. 
+2. In Visual Studio, press F5 to run the sample.
+3. When Excel opens, select the **Mail Merge** command button from the Home tab.
 
 ![Command button](readme-images/command_button.PNG)
 
-4. The task pane will open and you will be able to authenticate with Office 365 credentials once you click **Sign In with Microsoft**.
-5. Select from the list of templates. 
+4. The task pane will open and you will be able to authenticate with Office 365 credentials once you click **Sign in with Microsoft**.
+5. Select from the list of templates.
 
 ![Select a template](readme-images/select_template.PNG)
 
-6. Review and edit the list of recipients. 
+6. Review and edit the list of recipients.
 
 ![Edit recipients](readme-images/mailmerge_table.PNG)
 
-7. Preview and send the email. 
+7. Preview and send the email.
 
 ![Preview and send emails](readme-images/preview_send.PNG)
 
@@ -72,7 +73,7 @@ Save the application and make note of the *client ID*.
 We'd love to get your feedback about this sample. You can send your questions and suggestions to us in the [Issues](https://github.com/OfficeDev/Excel-Add-in-TypeScript-MailMerge/issues) section of this repository.
 
 Questions about Office 365 development in general should be posted to [Stack Overflow](http://stackoverflow.com/questions/tagged/office-addins). Make sure that your questions or comments are tagged with [office-addins].
-  
+
 ## Additional resources
 
 * [Office Add-in samples](https://github.com/OfficeDev?utf8=%E2%9C%93&query=-add-in)
